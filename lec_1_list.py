@@ -18,6 +18,6 @@ print(a)
 
 print(len(a))
 
-print(len(a[3]))
+print(len(a[3])) #Длина третьего элемента 
 
 print(a[3][2])
