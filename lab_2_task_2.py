@@ -1,4 +1,9 @@
-b1 = int(input())
+b0 = int(input())
 q = int(input())
 n = int(input())
-print(b1, b1*q**(n-1), b1*q**(n-2), b1*q**(n-3))
+print(b0)
+
+for i in range(n):
+  bn = b0*q
+  print(bn)
+  b0 = bn
