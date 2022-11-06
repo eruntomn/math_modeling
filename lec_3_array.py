@@ -2,3 +2,4 @@
 # array - массив
 
 
+import numpy
