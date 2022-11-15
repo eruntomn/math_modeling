@@ -1,7 +1,26 @@
 import numpy as np
-
-M = 5
-N = 4
+'''from random import randint
+a = np.zeros((4, 3))
+b = np.zeros((4, 3))
+c = np.zeros((4, 3))
+for i in range(4):
+  for j in range(3):
+    a[i, j] = randint(0, 100)
+    b[i, j] = randint(0, 100)
+print(a)
+print(b)
+for g in a:
+  for k in b:
+    if g > k:
+      c += g
+    else:
+      c += k'''
+      
+mx = 0
+for n in a:
+  if n > mx:
+    mx = n
+print(mx)
 
 A = np.zeros((M, N))
 
