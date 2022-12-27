@@ -1,23 +1,23 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-'''
+
 t = np.arange(-10, 10, 0.1)
 R = 5
 
-x = R * (t - np.sin(t)**3)
-y = R * (1 - np.cos(t)**3)
+x = R * (t - np.sin(t))
+y = R * (1 - np.cos(t))
 
 plt.plot(x, y, '-', lw = 3)
 plt.axis('equal')
 plt.savefig('task1.png')
-'''
 
-t = np.arange(-10, 10, 0.1)
-R = 3
 
-x = R * np.cos(t)**3
-y = R * np.sin(t)**3
+t1 = np.arange(-10, 10, 0.1)
+R1 = 3
+
+x = R1 * np.cos(t1)**3
+y = R1 * np.sin(t1)**3
 
 plt.plot(x, y, '-', lw = 3)
 plt.axis('equal')
