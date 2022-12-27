@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-'''
+
 def logarifm(a):
     f = np.arange(0, 8 * np.pi, 0.01)
     r = np.e**(a*f)
@@ -23,7 +23,7 @@ def archim(b):
     plt.ylabel('coord - y')
     plt.axis('equal')
     plt.savefig('pic_10_2.png')
-archim(0.2)'''
+archim(0.2)
 
 def gesl(c):
     f = np.arange(0.02, 8 * np.pi, 0.01)
