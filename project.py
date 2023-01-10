@@ -4,7 +4,7 @@ import matplotlib.animation as animation
 
 
 fig, ax = plt.subplots()
-ball1, = plt.plot([], [], 'o', color='y', label='Ball')
+ball1, = plt.plot([], [], 'o', color='r', label='Ball')
 
 def circle_move(R, vx0, vy0, time):
     x0 = vx0 * time
