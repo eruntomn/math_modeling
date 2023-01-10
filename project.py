@@ -24,8 +24,23 @@ import matplotlib.pyplot as plt
 import numpy as np
 import matplotlib.animation as animation
 
-
 fig, ax = plt.subplots()
+ball, = plt.plot([], [], 'o', color='b', label='Ball')
+def move(r, M, G, g):
+    h = (G*M/g)**0.5 - r
+    y = h - 0
+    return y
+
+plt.axis('equal')
+ax.set_ylim(-10000, 10000)
+ax.set_xlim(10, 10)
+
+def animate(i):
+    ball.set_data(move(r = 2, M = 6, G=7, g = 10))
+ani = animation.FuncAnimation(fig, animate, frames=100, interval=30)
+ani.save('dffbfbu.gif')
+
+'''fig, ax = plt.subplots()
 ball1, = plt.plot([], [], 'o', color='b', label='Ball')
 
 def circle_move(R, vx0, vy0, time):
@@ -37,14 +52,14 @@ def circle_move(R, vx0, vy0, time):
     return x, y
 
 plt.axis('equal')
-ax.set_xlim([5, 7])
-ax.set_ylim([1, -1])
+ax.set_xlim(5, 7)
+ax.set_ylim(-0.1, 1)
 
 def animate(i):
     ball1.set_data(circle_move(R=0.1, vx0=0.1, vy0=0.01, time=i))
 
 ani = animation.FuncAnimation(fig, animate, frames=300, interval=30)
-ani.save('proba.gif')
+ani.save('proba.gif')'''
 
 '''import numpy as np
 import matplotlib.pyplot as plt
