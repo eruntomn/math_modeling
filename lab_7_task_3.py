@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.animation as animation
 
 fig, ax = plt.subplots()
-btf, = plt.plot([], [], '-', color='r')
+btf, = plt.plot([], [], 'o', color='r')
 
 def circle_move(t):
     x = np.sin(t) * (np.exp(np.cos(t)) - 2*np.cos(4*t) + np.sin(t//12)**5)
