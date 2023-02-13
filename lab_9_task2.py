@@ -7,7 +7,7 @@ from scipy.integrate import odeint
 
 t = np.arange(0, 20, 0.1)
 def investizia(t, i):
-    d = - t * k * i
+    d = (k / np.pi) * e0* s* np.cos(np.pi/12*(t-12))
     return d
 
 k = 0.08
