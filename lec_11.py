@@ -58,4 +58,4 @@ edge = 15
 ax.set_xlim(0, edge)
 ax.set_ylim(0, edge)
 
-plt.save('1.gif')
+ani.save('1.gif')
